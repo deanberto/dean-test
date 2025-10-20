@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Feed Test - Reptile Ireland</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 0;
+        }
+        .test-header {
+            background: var(--secondary-bg);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .test-header h1 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+        .test-header p {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-header">
+        <div class="container">
+            <h1>Social Media Feed Test</h1>
+            <p>Testing the social media feed functionality with demo data</p>
+        </div>
+    </div>
+
+    <section class="social-feed">
+        <div class="container">
+            <h2 class="section-title">Follow Our Reptile Journey</h2>
+            <p class="feed-subtitle">Stay updated with our latest reptile discoveries, care tips, and community highlights from Instagram and Facebook</p>
+            
+            <div class="feed-controls">
+                <button class="feed-filter active" data-filter="all">All Posts</button>
+                <button class="feed-filter" data-filter="instagram">Instagram</button>
+                <button class="feed-filter" data-filter="facebook">Facebook</button>
+            </div>
+
+            <div class="social-feed-container">
+                <div class="feed-loading" id="feed-loading">
+                    <div class="loading-skeleton">
+                        <div class="skeleton-post">
+                            <div class="skeleton-header">
+                                <div class="skeleton-avatar"></div>
+                                <div class="skeleton-info">
+                                    <div class="skeleton-line short"></div>
+                                    <div class="skeleton-line shorter"></div>
+                                </div>
+                            </div>
+                            <div class="skeleton-image"></div>
+                            <div class="skeleton-content">
+                                <div class="skeleton-line"></div>
+                                <div class="skeleton-line"></div>
+                                <div class="skeleton-line short"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton-post">
+                            <div class="skeleton-header">
+                                <div class="skeleton-avatar"></div>
+                                <div class="skeleton-info">
+                                    <div class="skeleton-line short"></div>
+                                    <div class="skeleton-line shorter"></div>
+                                </div>
+                            </div>
+                            <div class="skeleton-image"></div>
+                            <div class="skeleton-content">
+                                <div class="skeleton-line"></div>
+                                <div class="skeleton-line"></div>
+                                <div class="skeleton-line short"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton-post">
+                            <div class="skeleton-header">
+                                <div class="skeleton-avatar"></div>
+                                <div class="skeleton-info">
+                                    <div class="skeleton-line short"></div>
+                                    <div class="skeleton-line shorter"></div>
+                                </div>
+                            </div>
+                            <div class="skeleton-image"></div>
+                            <div class="skeleton-content">
+                                <div class="skeleton-line"></div>
+                                <div class="skeleton-line"></div>
+                                <div class="skeleton-line short"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feed-grid" id="social-feed-grid">
+                    <!-- Social media posts will be dynamically inserted here -->
+                </div>
+
+                <div class="feed-error" id="feed-error" style="display: none;">
+                    <div class="error-content">
+                        <div class="error-icon">⚠️</div>
+                        <h3>Unable to load social media feed</h3>
+                        <p>We're having trouble connecting to our social media accounts. Please check back later or visit us directly on:</p>
+                        <div class="fallback-links">
+                            <a href="#" class="fallback-link instagram-link" target="_blank">
+                                <span class="fallback-icon">📷</span>
+                                Follow on Instagram
+                            </a>
+                            <a href="#" class="fallback-link facebook-link" target="_blank">
+                                <span class="fallback-icon">📘</span>
+                                Follow on Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feed-footer">
+                <a href="#" class="view-more-btn" id="load-more-posts">Load More Posts</a>
+                <div class="social-follow-cta">
+                    <p>Don't miss out on our latest updates!</p>
+                    <div class="follow-buttons">
+                        <a href="#" class="follow-btn instagram-follow" target="_blank">
+                            <span class="follow-icon">📷</span>
+                            Follow on Instagram
+                        </a>
+                        <a href="#" class="follow-btn facebook-follow" target="_blank">
+                            <span class="follow-icon">📘</span>
+                            Follow on Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="social-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

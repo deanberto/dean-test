@@ -61,6 +61,110 @@
             </div>
         </section>
 
+        <section class="social-feed">
+            <div class="container">
+                <h2 class="section-title">Follow Our Reptile Journey</h2>
+                <p class="feed-subtitle">Stay updated with our latest reptile discoveries, care tips, and community highlights from Instagram and Facebook</p>
+                
+                <div class="feed-controls">
+                    <button class="feed-filter active" data-filter="all">All Posts</button>
+                    <button class="feed-filter" data-filter="instagram">Instagram</button>
+                    <button class="feed-filter" data-filter="facebook">Facebook</button>
+                </div>
+
+                <div class="social-feed-container">
+                    <div class="feed-loading" id="feed-loading">
+                        <div class="loading-skeleton">
+                            <div class="skeleton-post">
+                                <div class="skeleton-header">
+                                    <div class="skeleton-avatar"></div>
+                                    <div class="skeleton-info">
+                                        <div class="skeleton-line short"></div>
+                                        <div class="skeleton-line shorter"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton-image"></div>
+                                <div class="skeleton-content">
+                                    <div class="skeleton-line"></div>
+                                    <div class="skeleton-line"></div>
+                                    <div class="skeleton-line short"></div>
+                                </div>
+                            </div>
+                            <div class="skeleton-post">
+                                <div class="skeleton-header">
+                                    <div class="skeleton-avatar"></div>
+                                    <div class="skeleton-info">
+                                        <div class="skeleton-line short"></div>
+                                        <div class="skeleton-line shorter"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton-image"></div>
+                                <div class="skeleton-content">
+                                    <div class="skeleton-line"></div>
+                                    <div class="skeleton-line"></div>
+                                    <div class="skeleton-line short"></div>
+                                </div>
+                            </div>
+                            <div class="skeleton-post">
+                                <div class="skeleton-header">
+                                    <div class="skeleton-avatar"></div>
+                                    <div class="skeleton-info">
+                                        <div class="skeleton-line short"></div>
+                                        <div class="skeleton-line shorter"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton-image"></div>
+                                <div class="skeleton-content">
+                                    <div class="skeleton-line"></div>
+                                    <div class="skeleton-line"></div>
+                                    <div class="skeleton-line short"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feed-grid" id="social-feed-grid">
+                        <!-- Social media posts will be dynamically inserted here -->
+                    </div>
+
+                    <div class="feed-error" id="feed-error" style="display: none;">
+                        <div class="error-content">
+                            <div class="error-icon">⚠️</div>
+                            <h3>Unable to load social media feed</h3>
+                            <p>We're having trouble connecting to our social media accounts. Please check back later or visit us directly on:</p>
+                            <div class="fallback-links">
+                                <a href="#" class="fallback-link instagram-link" target="_blank">
+                                    <span class="fallback-icon">📷</span>
+                                    Follow on Instagram
+                                </a>
+                                <a href="#" class="fallback-link facebook-link" target="_blank">
+                                    <span class="fallback-icon">📘</span>
+                                    Follow on Facebook
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feed-footer">
+                    <a href="#" class="view-more-btn" id="load-more-posts">Load More Posts</a>
+                    <div class="social-follow-cta">
+                        <p>Don't miss out on our latest updates!</p>
+                        <div class="follow-buttons">
+                            <a href="#" class="follow-btn instagram-follow" target="_blank">
+                                <span class="follow-icon">📷</span>
+                                Follow on Instagram
+                            </a>
+                            <a href="#" class="follow-btn facebook-follow" target="_blank">
+                                <span class="follow-icon">📘</span>
+                                Follow on Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="about-preview">
             <div class="container">
                 <div class="about-content">
@@ -95,9 +199,16 @@
                 </div>
                 <div class="footer-section">
                     <h4>Follow Us</h4>
+                    <p>Stay updated with our latest reptile content!</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
+                        <a href="https://facebook.com/reptileireland" class="social-link facebook" target="_blank" rel="noopener noreferrer">
+                            <span class="social-icon">📘</span>
+                            Facebook
+                        </a>
+                        <a href="https://instagram.com/reptileireland" class="social-link instagram" target="_blank" rel="noopener noreferrer">
+                            <span class="social-icon">📷</span>
+                            Instagram
+                        </a>
                     </div>
                 </div>
             </div>
@@ -107,6 +218,7 @@
         </div>
     </footer>
 
+    <script src="social-config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
