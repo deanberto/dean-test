@@ -151,6 +151,7 @@ p {
     position: relative;
     overflow: hidden;
     padding-top: 70px;
+    padding-left: 5px;
 }
 
 .hero::before {
