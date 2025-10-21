@@ -47,7 +47,7 @@ Simply open `index.html` in a web browser to view the website. All files are sel
 ## Social Media Links
 
 The website includes placeholder links for:
-- Facebook: `https://facebook.com/reptileireland`
+- Facebook: `https://www.facebook.com/groups/988139206592267`
 - Instagram: `https://instagram.com/reptileireland`
 
 Update these links in both `contact.html` and the footer sections of all pages to point to actual social media accounts.
