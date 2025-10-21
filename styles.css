@@ -671,6 +671,139 @@ p {
     margin-bottom: 0.5rem;
 }
 
+/* Breeding Information Styles */
+.breeding-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 2px solid var(--warning-color);
+}
+
+.breeding-disclaimer {
+    color: var(--warning-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.breeding-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.breeding-category {
+    background: var(--secondary-bg);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.breeding-category h3 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 1rem;
+}
+
+.species-breeding-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.general-breeding-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.breeding-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.breeding-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(74, 124, 89, 0.05), transparent);
+    transition: var(--transition);
+}
+
+.breeding-card:hover::before {
+    left: 100%;
+}
+
+.breeding-card:hover {
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow-light);
+    transform: translateY(-3px);
+}
+
+.breeding-card h4 {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.breeding-details h5 {
+    color: var(--warning-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.breeding-details ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.breeding-details li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.breeding-details p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Breeding category specific colors */
+.breeding-category:nth-child(1) .breeding-card h4 {
+    color: #4a7c59;
+}
+
+.breeding-category:nth-child(2) .breeding-card h4 {
+    color: #8b4513;
+}
+
+.breeding-category:nth-child(3) .breeding-card h4 {
+    color: #b8860b;
+}
+
+.breeding-category:nth-child(4) .breeding-card h4 {
+    color: var(--accent-color);
+}
+
 /* Care Tips */
 .care-tips {
     padding: 4rem 0;
@@ -1504,6 +1637,22 @@ p {
 
     .info-nav-btn {
         width: 200px;
+    }
+
+    .species-breeding-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .general-breeding-info {
+        grid-template-columns: 1fr;
+    }
+
+    .breeding-category {
+        padding: 2rem 1rem;
+    }
+
+    .breeding-card {
+        padding: 1.5rem;
     }
 
     .container {
